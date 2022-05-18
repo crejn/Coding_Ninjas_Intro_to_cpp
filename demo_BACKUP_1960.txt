@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+hi my name is crejn
+=======
+Hi my name is giru
+>>>>>>> 782b801 (commiting from repo B)
