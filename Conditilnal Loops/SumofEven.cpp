@@ -21,13 +21,13 @@ int main(){
     cin>>N;
     int n=2;
     int sum=0;
-    int temp=0;
+    int num=0;
     while(n<=N){
         if(n%2==0){
-            temp=n;
-            sum=sum+temp;
+            num=n;
+            sum=sum+num;
         }
-        n=n+1;
+        n=n++;
     }
     cout<<sum<<endl;
 }
