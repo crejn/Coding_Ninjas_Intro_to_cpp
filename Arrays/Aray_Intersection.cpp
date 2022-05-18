@@ -8,8 +8,7 @@ Input format :
 Line 1 : Array 1 Size
 Line 2 : Array 1 elements (separated by space)
 Line 3 : Array 2 Size
-Line 4 : Array 2 elements (separated by space)
-Output format :
+Line 4 : Array 2 elements (separated by spaceOutput format :
 Print intersection elements in different lines
 Constraints :
 0 <= m, n <= 10^4
@@ -38,13 +37,13 @@ Sample Output 2 :
 
 
 void intersection(int input1[], int input2[], int size1, int size2) {
-    int input3[10000]={0};
+    int output[10000]={0};
    
     for(int i = 0; i < size1; i++){
         for(int j = 0; j < size2; j++){
-            if(input1[i] == input2[j] && (input2[j] !=input3[j])){
+            if(input1[i] == input2[j] && (input2[j] !=output[j])){
                 cout << input2[j] << endl;
-                input3[j] = input2[j];
+                output[j] = input2[j];
                 break;
             }
         }
